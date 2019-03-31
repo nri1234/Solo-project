@@ -31,38 +31,3 @@
 .icon-calendar:before{content:'\0048';}
 .icon-close:before{content:'\0049';}
 .icon-details:before{content:'\004a';}
-header {
-    background-color: $main-shark;
-    @include size(100%, 50px);
-    .container {
-        @include margin (auto);
-        max-width: 1200px;
-        width: 100%;
-    }
-    nav {
-        img {
-            @include padding(10px, 10px, 10px, 10px);
-        }
-         ul {
-            float: right;
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-            li {
-                display: inline-block;
-                a {
-                    line-height: 50px;
-                    display: block;
-                    color: #fff;
-                    @include padding(0, 20px, 0, 20px);
-                    text-decoration: none;
-                    @include text-transform;
-                    &:hover,
-                    &:focus {
-                    color: $first-hover-other;
-                    }
-                }
-            }
-        }
-    }
-}
