@@ -1,10 +1,8 @@
-@import "variable";
-@import "mixins";
-@import "normalize";
-@import "layout";
 
-* {
-  box-sizing: border-box; }
+
+*{
+box-sizing: border-box;
+}
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -13,31 +11,41 @@
 .clearfix:after {
   clear: both; }
 
-section {
+header {
   background-color: #313234;
   width: 100%;
-  height: 50px; }
-  section nav {
-    margin: auto;
-    max-width: 188px;
-    @include size(188px, 100%); }
-  section nav ul {
-    float: right;
-    margin: 0;
-    padding: 0;
-    list-style-type: none; }
-    section nav ul li {
-      display: inline-block; }
-      section nav ul li a {
-        line-height: 50px;
-        display: block;
-        color: #fff;
-        padding-top: 0;
-        padding-right: 20px;
-        padding-bottom: 0;
-        padding-left: 20px;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold; }
-        section nav ul li a:hover, header nav ul li a:focus {
-          color: #3498db; }
+  height: 50px;
+      .container {
+        margin: auto;
+        max-width: 188px;
+        height: 100vh;
+        }
+        nav {
+            ul {
+            float: right;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+                li {
+                  display: inline-block;
+                   a {
+                    line-height: 50px;
+                    display: block;
+                    color: #fff;
+                    padding-top: 0;
+                    padding-right: 20px;
+                    padding-bottom: 0;
+                    padding-left: 20px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    &:hover,
+                    &:focus {
+                    color: #3498db;
+                    }
+                }
+            }
+        }
+    }
+}
+
