@@ -1,7 +1,11 @@
-@import "variable";
-@import "mixins";
-@import "normalize";
-@import "layout";
+@import '../vendor/icons/icon-font/css/Glyphter.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import 'variables';
+@import 'mixins';
+@import 'normalize';
+@import 'layout';
+@import 'components/index';
+@import 'sections/index';
 
 *{
 box-sizing: border-box;
@@ -13,38 +17,4 @@ box-sizing: border-box;
 
 .clearfix:after {
   clear: both; }
-
-header {
-  background-color: $main-shaft;
-  width: 100%;
-  height: 100vh;
-      .container {
-        margin: auto;
-        max-width: 188px;
-        height: 100vh;
-        }
-        nav {
-            ul {
-            float: left;
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-                li {
-                  display: block;
-                   a {
-                    line-height: 20px;
-                    display: block;
-                    color: #fff;
-                    @include padding(0, 20px, 0, 20px);
-                    @include text-transform;
-                    text-decoration: none;
-                    &:hover,
-                    &:focus {
-                    color: $main-background-cararra;
-                    }
-                }
-            }
-        }
-    }
-}
 
