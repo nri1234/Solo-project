@@ -8,46 +8,250 @@
         <link rel="stylesheet" type="text/scss" href="style.scss">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     </head>
-       <header>
-            <nav class="container">
-            <div class="clearfix">
+    <body>
+        <header class="bar">
+            <nav class="topbar">
+                <button class="nav-btn btn-wallet">
+                    <i class="icon-wallet"></i>
+                    <span class="amount">$1,500.00</span>
+                    <i class="icon-arrow-down"></i>
+                </button>
+                <button class="nav-btn btn-notification">
+                    <i class="icon-notification"></i>
+                    <i class="dot"></i>
+                </button>
+                <button class="nav-btn btn-profile">
+                    <i class="icon-profile"></i>
+                    <span class="name">Lena Polak</span>
+                <button class="nav-btn btn-quit">
+                    <i class="icon-quit"></i>
+                </button>
+                </button>
+            </nav>
+            </header>
+            <aside class="sidebar mobile" id="sidebar">
+                <div class="nav-header">
+                    <img class="logo" src="images/logo.png" alt="">
+                    <span class="menu-toggle" id="menu-toggle"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#"><i class="icon-general"></i> <span>General</span></a></li>
+                    <li><a href="#"><i class="icon-details"></i> <span>Details</span></a></li>
+                    <li><a href="#"><i class="icon-links"></i> <span>Links</span></a></li>
+                    <li><a href="#"><i class="icon-banners"></i> <span>Banners</span></a></li>
+                    <li><a href="#"><i class="icon-personaldata"></i> <span>Personal data</span></a></li>
+                    <li><a href="#"><i class="icon-payout"></i> <span>Payout</span></a></li>
+                    <li><a href="#"><i class="icon-postback"></i> <span>Postback</span></a></li>
+                </ul>
+                <div class="manager">
+                    <p class="boss">Your Manager</p>
+                    <div class="avatar">
+                        <div class="manager-pic">
+                            <span class="status"></span>
+                            <img src="images/photo.png" alt="Managers pic">
+                        </div>
+                    <span class="manager-name">Norbert M</span>
+                    </div>
+                </div>
+            </aside>
+            <section class="general">
+                <p>GENERAL STATISTICS</p>
+            </section>
+            <section class="main">
+                <div class="calendar">
+                    <form class="date-period">
+                        <input class="form-input" type="">
+                        <input class="form-input" type=""><i class="input-icon icon-calendar"></i>
+                        <button  class="submit-btn" type="submit"><i class="icon-refresh"></i></button>
+                    </form>
+                 </div>
+                <section class="numbers">
+                    <div class="row clearfix data">
+                        <div class="col-6 col-m-6 col-s-12 text ">
+                            <h3>Visits Signups</h3>
+                            <h4>124</h4>
+                        </div>
+                        <div class="col-6 col-m-6 col-s-12  dist">
+                            <h3>Net deposit</h3>
+                            <h4>564</h4>
+                        </div>
+                        </div>
+                        <div class="row clearfix data">
+                          <div class="col-6 col-m-6 col-s-12 text turn">
+                            <h3>FTD</h3>
+                            <h4>445</h4>
+                          </div>
+                          <div class="col-6 col-m-6 col-s-12 dist torn">
+                            <h3>Turn over</h3>
+                            <h4>432</h4>
+                          </div>
+                        </div>
+                </section>
 
-        	<ul>
-                <h1>Just do it<i class="fa fa-bars"></i></h1>
-
-        	    <li><a href="#details"><i class="fa fa-fw fa-wrench"></i> Details</a></li>
-        		<li><a href="#details"><i class="fa fa-fw fa-wrench"></i> Details</a></li>
-        		<li><a href="#clients"><i class="fa fa-fw fa-user"></i> Clients</a></li>
-        		<li><a href="#links"><i class="fa fa-fw fa-envelope"></i>Links</a></li>
-        		<li><a href="#banners"><i class="fa fa-fw fa-home"></i>Banners</a></li>
-                <li><a href="#personaldata"><i class="fa fa-fw fa-wrench"></i> Personal data</a></li>
-                <li><a href="#payout"><i class="fa fa-fw fa-user"></i> Payout</a></li>
-                <li><a href="#postback"><i class="fa fa-fw fa-envelope"></i>Postback</a></li>
-                <li><a href=”#avatar” class="avatar">Kontakt<img src="avatar.png" alt="Avatar" class="avatar"></a></li>
-        	</ul>
-        </div>
-        </nav>
-       </header>
-        <body>
-                <section class="top-bar">
+                <section class="chart">
+                   <div class="title">Earnings chart</div>
+                        <canvas id="myChart"></canvas>
+                </section>
 
                 </section>
-            <section class="statistics">
+                <section class="links">
+                    <p>Links</p>
+                </section>
 
-            </section>
-            <section class="calendar">
+                <section class="link">
+                    <div>
+                        <button class="add">+ add new
+                        </button>
+                    </div>
+                    <div class="shrink">
+                         <div class="row clearfix info">
+                            <div class="pages">
+                                <div class="col-5 col-m-6 col-s-12 web">
+                                    <p>Home page</p>
+                                </div>
+                                <div class="col-7 col-m-6 col-s-12 pref">
+                                        <p><a href="http://www.homepage.com">http://www.homepage.com</a></p>
+                                </div>
+                                <div class="overlay">
+                                      <i class="icon-links"></i><i class="icon-trash"></i>
+                                </div>
+                            </div>
+                        </div>
 
-            </section>
-            <section class="chart">
+                        <div class="row clearfix info">
+                            <div class="pages">
+                                <div class="col-5 col-m-6 col-s-12 web">
+                                <p>Currently offer</p>
+                                </div>
+                                <div class="col-7 col-m-6 col-s-12 pref">
+                                     <p><a href="http://www.currently.com">http://www.currently.com</a></p>
+                                </div>
+                                <div class="overlay">
+                                      <i class="icon-links"></i><i class="icon-trash"></i>
+                                </div>
+                            </div>
+                        </div>
 
-            </section>
-            <section class="links">
-                <div class="link">
 
+                        <div class="row clearfix info">
+                            <div class="pages">
+                                <div class="col-5 col-m-6 col-s-12 web">
+                                <p>Blurpix</p>
+                                </div>
+                                <div class="col-7 col-m-6 col-s-12 pref">
+                                <p><a href="http://www.blurpix.com">http://www.blurpix.com</a></p>
+                                </div>
+                                <div class="overlay">
+                                  <i class="icon-links"></i><i class="icon-trash"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix info">
+                            <div class="pages">
+                                <div class="col-5 col-m-6 col-s-12 web">
+                                    <p>Your site</p>
+                                </div>
+                                <div class="col-7 col-m-6 col-s-12 pref">
+                                     <p><a href="http://www.yoursite.com">http://www.yoursite.com</a></p>
+                                </div>
+                                <div class="overlay">
+                                      <i class="icon-links"></i><i class="icon-trash"></i>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row clearfix info">
+                            <div class="pages">
+                                <div class="col-5 col-m-6 col-s-12 web">
+                                    <p>Google</p>
+                                </div>
+                                <div class="col-7 col-m-6 col-s-12 pref">
+                                    <p><a href="http://www.google.com">http://www.google.com</a></p>
+                                </div>
+                                <div class="overlay">
+                                    <i class="icon-links"></i><i class="icon-trash"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix info">
+                            <div class="pages">
+                                <div class="col-5 col-m-6 col-s-12 web">
+                                    <p>Facebook</p>
+                                </div>
+                                <div class="col-7 col-m-6 col-s-12 pref">
+                                     <p><a href="http://www.facebook.com">http://www.facebook.com</a></p>
+                                </div>
+                                <div class="overlay">
+                                      <i class="icon-links"></i><i class="icon-trash"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix info">
+                            <div class="pages">
+                               <div class="col-5 col-m-6 col-s-12 web">
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="col-7 col-m-6 col-s-12 pref">
+                                     <p><a href="http://www.dashboard.com">http://www.dashboard.com</a></p>
+                                </div>
+                                <div class="overlay">
+                                  <i class="icon-links"></i><i class="icon-trash"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix info">
+                            <div class="pages">
+                               <div class="col-5 col-m-6 col-s-12 web">
+                                    <p>Blurax</p>
+                                </div>
+                                <div class="col-7 col-m-6 col-s-12 pref">
+                                     <p><a href="http://www.blurax.com">http://www.blurax.com</a></p>
+                                </div>
+                                <div class="overlay">
+                                      <i class="icon-links"></i><i class="icon-trash"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix info">
+                            <div class="pages">
+                               <div class="col-5 col-m-6 col-s-12 web">
+                                    <p>Piece of wine</p>
+                                </div>
+                                <div class="col-7 col-m-6 col-s-12 pref">
+                                     <p><a href="http://www.pieceofwine.com">http://www.pieceofwine.com</a></p>
+                                </div>
+                                <div class="overlay">
+                                    <i class="icon-links"></i><i class="icon-trash"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix info">
+                            <div class="pages">
+                               <div class="col-5 col-m-6 col-s-12 web">
+                                    <p>Twitter</p>
+                                </div>
+                            <div class="col-7 col-m-6 col-s-12 pref">
+                                 <p><a href="http://www.twitter.com">http://www.twitter.com</a></p>
+                            </div>
+                            <div class="overlay">
+                                  <i class="icon-links"></i><i class="icon-trash"></i>
+                            </div>
+                            </div>
+                        </div>
+                        <div><button class="add">+ add new</button>
+                        </div>
                 </div>
-                <div class="sources">
-
-                </div>
             </section>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+            <script src="script.js"></script>
         </body>
 </html>
