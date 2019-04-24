@@ -1,11 +1,11 @@
 @import '../vendor/icons/icon-font/css/Glyphter.css';
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
-@import 'variables';
+@import 'variable';
 @import 'mixins';
 @import 'normalize';
 @import 'layout';
 @import 'components/index';
-@import 'sections/index';
+
 
 *{
 box-sizing: border-box;
