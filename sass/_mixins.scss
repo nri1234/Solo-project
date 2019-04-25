@@ -33,17 +33,7 @@
     }
   }
 }
-@mixin layout {
-    margin-left: 188px;
-    font-size: 16px;
-    height: auto;
-    width: 90%;
-    border-top: 80px solid $main-background-cararra;
-    border-bottom: 20px solid $main-background-cararra;
-    border-left: 20px solid $main-background-cararra;
-    border-right: 20px solid $main-background-cararra;
-    @include padding(20px, 20px, 20px, 20px);
-}
+
 @mixin circle($radius) {
     border-radius: 50%;
     height: $radius;
