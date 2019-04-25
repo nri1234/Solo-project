@@ -530,6 +530,9 @@ template {
   display: inline-block;
   position: absolute;
   top: 14px;
+  border-radius: 50%;
+  height: 9px;
+  width: 9px;
 }
 
 .nav-btn:hover {
@@ -720,6 +723,9 @@ template {
   display: inline-block;
   position: absolute;
   top: 14px;
+  border-radius: 50%;
+  height: 9px;
+  width: 9px;
 }
 
 .nav-btn:hover {
