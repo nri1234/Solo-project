@@ -35,7 +35,6 @@
     background-color: $buttons-chart-extasy;
     display: inline-block;
     @include position (absolute, 14px);
-    @include circle(9px);
 
   }
   &:hover {
