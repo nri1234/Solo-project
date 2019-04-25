@@ -7,7 +7,7 @@
   height: 100vh;
   font-size: 14px;
   position: fixed;
-  @media(max-width: 767px) {
+  @media (max-width: 767px) {
   min-width: 55px;
   }
   .nav-header {
@@ -15,7 +15,7 @@
     justify-content: space-around;
     @include padding (20px, 20px, 20px, 20px);
     .logo {
-      dispalay: inline-block;
+      display: inline-block;
     }
     .menu-toggle {
       cursor: pointer;
