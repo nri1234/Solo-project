@@ -4,11 +4,39 @@
 @import 'mixins';
 @import 'normalize';
 @import 'layout';
-@import 'sidebar';
-@import 'topbar';
+@import 'components/buttons';
+@import 'sections/sidebar';
+@import 'sections/topbar';
 @import 'index';
+@import 'sections/general';
+@import 'sections/links';
 
-
+body {
+    max-width: 1400px;
+    margin: 0px;
+    padding: 0px;
+}
+@media ( max-width: 767px) {
+  body {
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+}
+}
+@media ( max-width: 560px) {
+  body {
+    width: 90vw;
+    margin: 0;
+    padding: 0px;
+}
+}
+@media ( max-width: 360px) {
+  body {
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+}
+}
 
 *{
 box-sizing: border-box;

@@ -7,9 +7,7 @@
   height: 100vh;
   font-size: 14px;
   position: fixed;
-  @media(max-width: 767px) {
-  min-width: 55px;
-  }
+  z-index: 999999;
   .nav-header {
     display: flex;
     justify-content: space-around;
@@ -44,6 +42,7 @@
       @include padding (10px, 0, 10px, 16px);
       display: block;
       border-left: 4px solid transparent;
+      font-weight: 500;
       i {
         margin-right: 14px;
       }
@@ -55,6 +54,7 @@
     }
   }
 }
+
 .manager {
   border-top: 1px solid grey;
   @include padding (0, 0, 0, 20px);
@@ -64,6 +64,7 @@
     margin: 0;
     letter-spacing: -0.28px;
     line-height: 42px;
+    font-weight: 500;
   }
   .avatar {
     display: flex;
@@ -82,9 +83,47 @@
     }
   }
   .manager-name {
-    color: white;
+    color: #0080ff;
     line-height: 40px;
     margin-left: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .short-menu {
+    min-width: 55px;
+    max-width: 65px;
+    .nav-header {
+      .logo {
+        display: none
+      }
+      .menu-toggle {
+          display: block;
+      }
+    }
+    .nav-menu a > i{
+      margin-left: 0px;
+      font-size: 11px;
+      text-align: center;
+       @include padding (0, 0, 0px, 0);
+    }
+
+    .manager {
+        padding-left: 10px;
+        .boss, .manager-name, {
+            display: none;
+        }
+        .manager-pic {
+            margin-top: 4px;
+            width: 26px;
+            height: 26px;
+        }
+    }
+    .nav-menu a {
+      margin-left: 0px;
+      font-size: 14px;
+      text-align: center;
+       @include padding (0, 0, 0px, 0);
+    }
   }
 }
 
