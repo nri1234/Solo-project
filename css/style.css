@@ -243,7 +243,7 @@ template { display: none; }
 
 .manager .manager-name { color: #0080ff; line-height: 40px; margin-left: 14px; }
 
-@media (max-width: 767px) { .short-menu { min-width: 55px; max-width: 65px; }
+@media (max-width: 767px) { .short-menu { min-width: 55px; max-width: 65px; height: 100%; }
   .short-menu .nav-header .logo { display: none; }
   .short-menu .nav-header .menu-toggle { display: block; }
   .short-menu .nav-menu a > i { margin-left: 0px; font-size: 11px; text-align: center; padding-top: 0; padding-right: 0; padding-bottom: 0px; padding-left: 0; }
@@ -272,7 +272,8 @@ template { display: none; }
 
 @media (max-width: 560px) { .topbar { width: 100vw; } }
 
-@media (max-width: 360px) { .topbar { width: 100vw; } }
+@media (max-width: 380px) { .topbar { display: 100vw; }
+  .topbar span { display: none; } }
 
 .sidebar { font-family: 'Roboto', sans-serif; font-weight: bold; background-color: #333333; width: 10%; min-width: 188px; height: 100vh; font-size: 14px; position: fixed; z-index: 999999; }
 
@@ -308,7 +309,7 @@ template { display: none; }
 
 .manager .manager-name { color: #0080ff; line-height: 40px; margin-left: 14px; }
 
-@media (max-width: 767px) { .short-menu { min-width: 55px; max-width: 65px; }
+@media (max-width: 767px) { .short-menu { min-width: 55px; max-width: 65px; height: 100%; }
   .short-menu .nav-header .logo { display: none; }
   .short-menu .nav-header .menu-toggle { display: block; }
   .short-menu .nav-menu a > i { margin-left: 0px; font-size: 11px; text-align: center; padding-top: 0; padding-right: 0; padding-bottom: 0px; padding-left: 0; }
@@ -337,7 +338,111 @@ template { display: none; }
 
 @media (max-width: 560px) { .topbar { width: 100vw; } }
 
-@media (max-width: 360px) { .topbar { width: 100vw; } }
+@media (max-width: 380px) { .topbar { display: 100vw; }
+  .topbar span { display: none; } }
+
+.general { margin-left: 188px; font-size: 16px; width: auto; height: auto; border-top: 80px solid #f5f5f2; border-bottom: 2px solid #f5f5f2; border-left: 20px solid #f5f5f2; border-right: 20px solid #f5f5f2; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; }
+
+.general p { font-size: 18px; font-family: "Roboto", sans-serif; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; color: #a6a6a6; }
+
+.general .calendar { width: auto; height: auto; padding-top: 20px; padding-right: 0; padding-bottom: 0; padding-left: 0; text-align: center; margin: 0 50px; }
+
+.general .calendar .form-input, .general .calendar .date-period, .general .calendar .date-period { border-radius: 4px; color: #333333; border: 1px solid black; font-size: 16px; font-family: "Roboto", sans-serif; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; text-align: left; outline: none; width: auto; height: auto; }
+
+.general .calendar .input-icon { display: inline-block; font-size: 20px; transform: translate(30px); margin-left: -55px; z-index: 1; color: #a6a6a6; }
+
+.general .calendar .date-period { display: inline-block; }
+
+.general .calendar .date-period input { border: none; }
+
+.general .calendar .date-period input:nth-child(2) { border-radius: 0px; border-left: 1px #333333 solid; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 14px; }
+
+.general .calendar .date-period .icon-calendar { color: #333333; cursor: pointer; }
+
+.general .calendar .date-period .icon-calendar:hover { color: #a6a6a6; }
+
+.general .calendar .submit-btn, .general .calendar .btn-orange { width: 47px; height: 47px; border-radius: 4px; border: none; margin-left: 2px; }
+
+.general .calendar .submit-btn .icon-refresh, .general .calendar .btn-orange .icon-refresh { color: white; font-size: 15px; }
+
+.general .date-period:hover { border: 1px solid #a6a6a6; }
+
+.general .date-period:focus { border: 1px solid #a6a6a6; }
+
+.general .numbers { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; margin: 0 50px 0 50px; -ms-flex-wrap: wrap; flex-wrap: wrap; text-align: center; width: auto; height: auto; }
+
+.general .numbers h3 { color: #a6a6a6; }
+
+.general .numbers .data { text-align: center; }
+
+.general .numbers .data .text { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; border-bottom: 0.5px solid #f5f5f2; -ms-flex-pack: justify; justify-content: space-between; @includ padding (1px 5px 1px 30px); width: 40%; height: 45px; margin-right: 10px; }
+
+.general .numbers .data .dist { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; border-bottom: 0.5px solid #f5f5f2; -ms-flex-pack: justify; justify-content: space-between; @includ padding (1px 30px 1px 5px); width: 40%; height: 45px; margin-left: 15px; }
+
+.general .chart { margin: 0 70px; }
+
+.general hr { width: auto; height: 10px; padding-top: 2px; padding-right: 0px; padding-bottom: 2px; padding-left: 0px; background-color: #f5f5f2; border: none; }
+
+.general .title { font-size: 18px; font-family: "Roboto", sans-serif; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; color: #a6a6a6; font-weight: 500; margin: 35px; margin-bottom: 20px; }
+
+@media (max-width: 767px) { .general { margin-left: 55px; font-size: 12px; max-width: 767px; border-top: 35px solid #f5f5f2; border-bottom: 0px; border-left: 0px; border-right: 0px; padding-top: 30px; padding-right: 30px; padding-bottom: 30px; padding-left: 30px; }
+  .general p { font-size: 12px; }
+  .general .calendar { margin: auto; }
+  .general .calendar .form-input, .general .calendar .date-period, .general .calendar .date-period { font-size: 14px; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; width: 80%; height: auto; }
+  .general .calendar .input-icon { font-size: 16px; margin-left: -20px; }
+  .general .calendar .date-period { display: inline-block; }
+  .general .calendar .date-period input:nth-child(2) { border-left: none; padding-left: 1px; }
+  .general .calendar .date-period .icon-calendar { color: #333333; cursor: pointer; }
+  .general .calendar .date-period .icon-calendar:hover { color: #a6a6a6; }
+  .general .calendar .submit-btn, .general .calendar .btn-orange { width: 30px; height: 30px; top: 170px; position: absolute; }
+  .general .chart { margin: auto; height: 80%; }
+  .general hr { display: none; }
+  .general .title { font-size: 12px; margin: 0px; margin-top: 15px; } }
+
+@media (max-width: 560px) { .general .numbers { margin: 0px; }
+  .general .numbers h3 { font-weight: 500; }
+  .general .numbers .data .text { width: 40%; padding: 10px; text-align: left; border-bottom: none; }
+  .general .numbers .data .dist { width: 40%; padding: 10px; text-align: left; border-bottom: none; } }
+
+.links { margin-left: 188px; font-size: 16px; width: auto; height: auto; border-top: 20px solid #f5f5f2; border-bottom: 2px solid #f5f5f2; border-left: 20px solid #f5f5f2; border-right: 20px solid #f5f5f2; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; }
+
+.links p { font-size: 18px; font-family: "Roboto", sans-serif; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; color: #a6a6a6; }
+
+.links hr { width: auto; height: 10px; padding-top: 2px; padding-right: 0px; padding-bottom: 2px; padding-left: 0px; background-color: #f5f5f2; border: none; }
+
+.links .shrink { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; margin: 0 50px 0 50px; -ms-flex-wrap: wrap; flex-wrap: wrap; text-align: center; width: auto; height: auto; padding-top: 30px; padding-right: 30px; padding-bottom: 30px; padding-left: 30px; }
+
+.links .shrink .add, .links .shrink .btn-orange { margin: 20px 50px; text-align: center; width: 150px; height: 47px; border-radius: 4px; border: none; color: white; font-family: "Roboto", sans-serif; }
+
+.links .shrink .info { border: 1px solid #f5f5f2; text-align: left; width: auto; border-left: none; border-right: none; position: relative; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; }
+
+.links .shrink .info .pages { height: auto; z-index: 2222; }
+
+.links .shrink .info .pages:hover .overlay, .links .shrink .info .pages:focus .overlay { opacity: 1; }
+
+.links .shrink .info .pages .web p { font-size: 18px; font-family: "Roboto", sans-serif; font-weight: bold; text-align: justify; color: #a6a6a6; }
+
+.links .shrink .info .pages .pref p { font-size: 18px; font-family: "Roboto", sans-serif; font-weight: bold; text-align: justify; color: #56819f; }
+
+.links .shrink .info .pages .overlay { position: absolute; top: 0; right: 0; bottom: 0; left: 0; padding-top: 62px; padding-right: 62px; padding-bottom: 62px; padding-left: 62px; border: none; display: inline; width: auto; height: auto; opacity: 0; transition: .5s ease; cursor: pointer; background-color: rgba(0, 0, 0, 0.08); text-align: right; overflow: hidden; }
+
+.links .shrink .info .pages .overlay .icon-links { color: #f58220; font-size: 16px; margin: 20px; }
+
+.links .shrink .info .pages .overlay .icon-trash { font-size: 16px; margin: 20px; }
+
+@media (max-width: 767px) { .links { margin-left: 55px; font-size: 12px; max-width: 767px; border-top: 0px solid #f5f5f2; border-bottom: 0px solid #f5f5f2; border-left: 0px solid #f5f5f2; border-right: 0px solid #f5f5f2; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; }
+  .links p { font-size: 12px; }
+  .links hr { display: none; }
+  .links .shrink { margin: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
+  .links .shrink .add, .links .shrink .btn-orange { margin-bottom: 15px; margin-top: 15px; width: 120px; height: 37px; }
+  .links .shrink .info { position: inherit; padding-top: 0px; padding-right: 1px; padding-bottom: 0px; padding-left: 1px; }
+  .links .shrink .info .pages { height: auto; z-index: 2222; }
+  .links .shrink .info .pages:hover .overlay, .links .shrink .info .pages:focus .overlay { opacity: 1; }
+  .links .shrink .info .pages .web p { font-size: 12px; text-align: center; font-weight: 500; }
+  .links .shrink .info .pages .pref p { font-size: 12px; text-align: center; }
+  .links .shrink .info .pages .overlay { position: inherit; top: 0; right: 0; bottom: 0; left: 0; padding-top: 0px; padding-right: 38%; padding-bottom: 0px; padding-left: 40%; background-color: rgba(0, 0, 0, 0.08) transparent; text-align: center; }
+  .links .shrink .info .pages .overlay .icon-links { font-size: 12px; }
+  .links .shrink .info .pages .overlay .icon-trash { font-size: 12px; } }
 
 .general { margin-left: 188px; font-size: 16px; width: auto; height: auto; border-top: 80px solid #f5f5f2; border-bottom: 2px solid #f5f5f2; border-left: 20px solid #f5f5f2; border-right: 20px solid #f5f5f2; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; }
 
