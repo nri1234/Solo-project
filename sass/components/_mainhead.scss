@@ -1,0 +1,10 @@
+.links {
+    margin-left: 188px;
+    font-size: 16px;
+    @include size (auto, auto);
+    border-top: 20px solid $main-background-cararra;
+    border-bottom: 2px solid $main-background-cararra;
+    border-left: 20px solid $main-background-cararra;
+    border-right: 20px solid $main-background-cararra;
+    @include padding (0, 0, 0, 0)
+}

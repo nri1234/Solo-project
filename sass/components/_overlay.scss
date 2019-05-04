@@ -1,0 +1,12 @@
+.overlay {
+            @include position (absolute, 0, 0, 0, 0);
+            @include padding (0px, 0px, 0px, 0px,);
+            border: none;
+            display: inline;
+            @include size (auto, auto);
+            opacity: 0;
+            transition: .5s ease;
+            cursor: pointer;
+            background-color: rgba(0,0,0, 0.08);
+            overflow: hidden;
+}

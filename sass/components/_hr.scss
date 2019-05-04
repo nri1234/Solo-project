@@ -1,0 +1,6 @@
+hr {
+    @include size (auto, auto);
+    @include padding (0px, 0px, 0px, 0px);
+    background-color: $main-background-cararra;
+    border: none;
+  }
