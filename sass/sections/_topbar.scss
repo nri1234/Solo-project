@@ -15,6 +15,7 @@
   cursor: pointer;
   @include padding (20px, 20px, 20px, 20px);
   border-left: 1px solid #e3e3e3;
+  position: relative;
   span {
     margin: 0 15px;
     .amount {
@@ -33,7 +34,7 @@
   .dot {
     background-color: $buttons-chart-extasy;
     display: inline-block;
-    @include position (absolute, 14px);
+    @include position (absolute, 16px, 18px);
     @include circle(9px);
 
   }

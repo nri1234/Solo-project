@@ -67,7 +67,10 @@
               font-weight: bold;
               text-align:justify;
               color: $chart-horizon;
+              position: relative;
               a {
+                position: absolute;
+                z-index: 222;
               }
             }
           }
@@ -91,14 +94,14 @@
             }
             .icon-trash {
               font-size: 16px;
-              margin: 20px;
+              margin: -10px;
             }
           }
         }
       }
     }
   }
-@media (max-width: 767px) {
+@media (max-width: 769px) {
   .links {
     margin-left: 55px;
     font-size: 12px;
@@ -135,22 +138,24 @@
             .web {
               p {
                 font-size: 12px;
-                text-align: center;
+                text-align:justify;
                 font-weight: 500;
               }
             }
           .pref {
             p {
               font-size: 12px;
-              text-align: center;
+              text-align: justify;
+              margin: 0 50px;
               a {
+                left: 0px;
               }
             }
           }
           .overlay {
             @include position (inherit, 0, 0, 0, 0);
-            @include padding (0px, 38%, 0px, 40%);
-            background-color: rgba(0,0,0, 0.08) transparent;
+            @include padding (0px, 0px, 0px, 0px);
+            background-color: rgba(0,0,0,0);
             text-align: center;
             .icon-links {
               font-size: 12px;
