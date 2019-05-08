@@ -361,7 +361,7 @@ template { display: none; }
 @media (max-width: 380px) { .topbar { display: 100vw; }
   .topbar span { display: none; } }
 
-.general { margin-left: 188px; font-size: 16px; width: auto; height: auto; border-top: 80px solid #f5f5f2; border-bottom: 2px solid #f5f5f2; border-left: 20px solid #f5f5f2; border-right: 20px solid #f5f5f2; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; box-shadow: 10px 10px 10px 10px; }
+.general { margin-left: 188px; font-size: 16px; width: auto; height: auto; border-top: 80px solid #f5f5f2; border-bottom: 2px solid #f5f5f2; border-left: 20px solid #f5f5f2; border-right: 20px solid #f5f5f2; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; }
 
 .general p { font-size: 18px; font-family: "Roboto", sans-serif; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; color: #a6a6a6; }
 
@@ -414,7 +414,7 @@ template { display: none; }
   .general .calendar .date-period input:nth-child(2) { border-left: none; padding-left: 1px; }
   .general .calendar .date-period .icon-calendar { color: #333333; cursor: pointer; }
   .general .calendar .date-period .icon-calendar:hover { color: #a6a6a6; }
-  .general .calendar .submit-btn, .general .calendar .btn-orange { width: 30px; height: 30px; top: 130px; position: absolute; }
+  .general .calendar .submit-btn, .general .calendar .btn-orange { width: 30px; height: 30px; top: 150px; position: absolute; }
   .general .chart { margin: auto; height: 80%; }
   .general hr { display: none; }
   .general .title { font-size: 12px; margin: 0px; margin-top: 15px; } }
@@ -467,7 +467,7 @@ template { display: none; }
   .links .shrink .info .pages .overlay .icon-links { font-size: 12px; }
   .links .shrink .info .pages .overlay .icon-trash { font-size: 12px; } }
 
-.general { margin-left: 188px; font-size: 16px; width: auto; height: auto; border-top: 80px solid #f5f5f2; border-bottom: 2px solid #f5f5f2; border-left: 20px solid #f5f5f2; border-right: 20px solid #f5f5f2; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; box-shadow: 10px 10px 10px 10px; }
+.general { margin-left: 188px; font-size: 16px; width: auto; height: auto; border-top: 80px solid #f5f5f2; border-bottom: 2px solid #f5f5f2; border-left: 20px solid #f5f5f2; border-right: 20px solid #f5f5f2; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; }
 
 .general p { font-size: 18px; font-family: "Roboto", sans-serif; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; color: #a6a6a6; }
 
@@ -520,7 +520,7 @@ template { display: none; }
   .general .calendar .date-period input:nth-child(2) { border-left: none; padding-left: 1px; }
   .general .calendar .date-period .icon-calendar { color: #333333; cursor: pointer; }
   .general .calendar .date-period .icon-calendar:hover { color: #a6a6a6; }
-  .general .calendar .submit-btn, .general .calendar .btn-orange { width: 30px; height: 30px; top: 130px; position: absolute; }
+  .general .calendar .submit-btn, .general .calendar .btn-orange { width: 30px; height: 30px; top: 150px; position: absolute; }
   .general .chart { margin: auto; height: 80%; }
   .general hr { display: none; }
   .general .title { font-size: 12px; margin: 0px; margin-top: 15px; } }
