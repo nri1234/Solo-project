@@ -1,6 +1,44 @@
-.overlay {
+.info {
+        border: 1px solid $main-background-cararra;
+        text-align: left;
+        width: auto;
+        border-left: none;
+        border-right: none;
+        position: relative;
+        @include padding (20px, 20px, 20px, 20px);
+        .pages {
+          height: auto;
+          z-index: 2222;
+            &:hover .overlay,
+            &:focus .overlay {
+              opacity: 1;
+            }
+            .web {
+            p {
+              font-size: 18px;
+              font-family: "Roboto", sans-serif;
+              font-weight: bold;
+              text-align:justify;
+              color: $font ;
+            }
+          }
+          .pref {
+            p {
+              font-size: 18px;
+              font-family: "Roboto", sans-serif;
+              font-weight: bold;
+              text-align:justify;
+              color: $chart-horizon;
+              position: relative;
+              a {
+                position: absolute;
+                z-index: 222;
+              }
+            }
+          }
+          .overlay {
             @include position (absolute, 0, 0, 0, 0);
-            @include padding (0px, 0px, 0px, 0px,);
+            @include padding (62px, 62px, 62px, 62px,);
             border: none;
             display: inline;
             @include size (auto, auto);
@@ -8,5 +46,18 @@
             transition: .5s ease;
             cursor: pointer;
             background-color: rgba(0,0,0, 0.08);
+            text-align:right;
             overflow: hidden;
-}
+
+            .icon-links {
+              color: $buttons-chart-extasy;
+              font-size: 16px;
+              margin: 20px;
+            }
+            .icon-trash {
+              font-size: 16px;
+              margin: -10px;
+            }
+          }
+        }
+      }

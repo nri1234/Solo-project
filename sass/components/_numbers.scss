@@ -1,0 +1,32 @@
+.numbers {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    text-align: center;
+    @include size (auto, auto);
+    h3 {
+      color: $font;
+    }
+    .data {
+      text-align: center;
+      .text {
+        display: flex;
+        flex-direction: row;
+        border-bottom: 0.5px solid black;
+        justify-content: space-between;
+        @includ padding (1px 5px 1px 30px);
+        @include size (40%, 45px);
+        margin-right: 10px;
+      }
+      .dist {
+        display: flex;
+        flex-direction: row;
+        border-bottom: 0.5px solid black;
+        justify-content: space-between;
+        @includ padding (1px 30px 1px 5px);
+        @include size (40%, 45px);
+        margin-left: 15px;
+      }
+    }
+}

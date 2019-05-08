@@ -136,7 +136,7 @@
       border-bottom: 0px;
       border-left: 0px;
       border-right: 0px;
-      @include padding (30px, 30px, 30px, 30px);
+      @include padding (10px, 10px, 10px, 10px);
       p {
         font-size: 12px;
       }
@@ -169,7 +169,7 @@
       }
       .submit-btn, .btn-orange {
           @include size (30px, 30px);
-          top: 170px;
+          top: 130px;
           position: absolute;
           .icon-refresh {
           }

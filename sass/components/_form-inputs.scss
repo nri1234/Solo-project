@@ -1,73 +1,38 @@
 
-.form-input {
-    border-radius: 3px;
-    color: #333333;
-    border: 1px solid #e3e3e3;
-    font-family: $default-font;
-    font-size: 14px;
-    padding: 15px;
-    text-align: left;
-    outline: none;
-    &::placeholder {
-        color: #a6a6a6;
+.form-input, .date-period {
+      border-radius: 4px;
+      color: $main-shaft;
+      border: 1px solid black;
+      font-size: 16px;
+      font-family: "Roboto", sans-serif;
+      text-align: left;
+      outline: none;
+      @include size (auto, auto);
     }
-    &:hover, &:focus {
-        border: 1px solid #b1b1b1;
+    .input-icon {
+      display: inline-block;
+      font-size: 20px;
+      transform: translate(0px);
+      margin-left: auto;
+      z-index: 1;
+      color: $font;
     }
-
-    &[type='checkbox'] {
-        display: none;
-        ~ label {
-            padding: 12px;
-            &::before {
-                background-color: #ffffff;
-                border: 1px solid #e3e3e3;
-                color: #ffffff;
-                content: '\02714';
-                display: inline-block;
-                margin-right: 14px;
-                width: 18px;
-                height: 18px;
-            }
-        }
-
-        &:checked ~ label::before {
-            border-color: $online-color;
-            background-color: $online-color;
-        }
-    }
-    &[disabled] {
-        color: #a6a6a6;
-        cursor: not-allowed;
-    }
-}
-
-.input-icon {
-        display: inline-block;
-        font-size: 16px;
-        transform: translate(30px);
-        margin-left: -20px;
-        z-index: 1;
-        +.form-input {
-            padding-left: 34px;
-            z-index: 0;
-        }
-    }
-.date-period {
+    .date-period {
     @extend .form-input;
     display: inline-block;
     input {
         border: none;
         &:nth-child(2) {
-            border-left: #9c9c9c solid 1px;
-            padding-left: 14px;
+          border-radius: 0px;
+          border-left: 1px $main-shaft solid;
+          @include padding (0, 0, 0, 0);
         }
     }
     .icon-calendar {
-        color: #9c9c9c;
+        color: $main-shaft;
         cursor: pointer;
         &:hover {
-            color: #333333;
+            color: $font;
         }
     }
-}
+  }

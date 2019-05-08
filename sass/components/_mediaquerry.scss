@@ -1,0 +1,275 @@
+@media (max-width: 769px) {
+    .general {
+      margin-left: 55px;
+      font-size: 12px;
+      max-width: 767px;
+      border-top: 35px solid $main-background-cararra;
+      border-bottom: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      @include padding (30px, 30px, 30px, 30px);
+      p {
+        font-size: 12px;
+      }
+      .calendar {
+        margin:auto;
+        .form-input, .date-period {
+          font-size: 14px;
+          @include padding (2px, 2px, 2px, 2px);
+          @include size (80%, auto);
+        }
+        .input-icon {
+          font-size: 16px;
+          margin-left: -29px;
+        }
+        .date-period {
+        display: inline-block;
+        input {
+            &:nth-child(2) {
+              border-left: none;
+              padding-left: 1px;
+            }
+        }
+        .icon-calendar {
+            color: $main-shaft;
+            cursor: pointer;
+            &:hover {
+                color: $font;
+            }
+        }
+      }
+      .submit-btn, .btn-orange {
+          @include size (30px, 30px);
+          top: 170px;
+          position: absolute;
+          .icon-refresh {
+          }
+        }
+      }
+      .chart {
+        margin: auto;
+        height: 80%;
+      }
+      hr {
+        display: none;
+      }
+      .title {
+        font-size: 12px;
+        margin: 0px;
+        margin-top: 15px;
+      }
+    }
+  }
+  @media (max-width: 560px) {
+    .general {
+      p {
+    }
+      .calendar {
+        .form-input, .date-period {
+        }
+        .input-icon {
+        }
+        .date-period {
+        input {
+            &:nth-child(2) {
+            }
+        }
+        .icon-calendar {
+            &:hover {
+            }
+        }
+      }
+      .submit-btn, .btn-orange {
+          .icon-refresh {
+          }
+        }
+      }
+
+      & .date-period:hover {
+      }
+      & .date-period:focus {
+      }
+      .numbers {
+        margin: 0px;
+        h3 {
+          font-weight: 500;
+        }
+        .data {
+          .text {
+            width: 40%;
+            padding: 10px;
+            text-align: left;
+            border-bottom: none;
+          }
+          .dist {
+            width: 40%;
+            padding: 10px;
+            text-align: left;
+            border-bottom: none;
+          }
+        }
+      }
+      .chart {
+      }
+      hr {
+      }
+    }
+  }
+@media (max-width: 769px) {
+  .links {
+    margin-left: 55px;
+    font-size: 12px;
+    max-width: 767px;
+    border-top: 0px solid $main-background-cararra;
+    border-bottom: 0px solid $main-background-cararra;
+    border-left: 0px solid $main-background-cararra;
+    border-right: 0px solid $main-background-cararra;
+    @include padding (10px, 10px, 10px, 10px);
+    p {
+      font-size: 12px;
+    }
+    hr {
+      display: none;
+    }
+    .shrink {
+      margin: 0px;
+      @include padding (0px, 0px, 0px, 0px);
+      .add, .btn-orange {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        @include size (120px, 37px);
+      }
+      .info {
+        position: inherit;
+        @include padding (0px, 1px, 0px, 1px);
+        .pages {
+          height: auto;
+          z-index: 2222;
+            &:hover .overlay,
+            &:focus .overlay {
+              opacity: 1;
+            }
+            .web {
+              p {
+                font-size: 12px;
+                text-align:justify;
+                font-weight: 500;
+              }
+            }
+          .pref {
+            p {
+              font-size: 12px;
+              text-align: justify;
+              margin: 0 50px;
+              a {
+                left: 0px;
+              }
+            }
+          }
+          .overlay {
+            @include position (inherit, 0, 0, 0, 0);
+            @include padding (0px, 0px, 0px, 0px);
+            background-color: rgba(0,0,0,0);
+            text-align: center;
+            .icon-links {
+              font-size: 12px;
+            }
+            .icon-trash {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 769px) {
+  .short-menu {
+    min-width: 55px;
+    max-width: 65px;
+    height:100%;
+    .nav-header {
+      .logo {
+        display: none
+      }
+      .menu-toggle {
+          display: block;
+      }
+    }
+    .nav-menu a > 1 {
+      margin-left: 0px;
+      font-size: 12px;
+      text-align: center;
+      @include padding (0, 0, 0px, 0);
+      height: 50px;
+      margin-top: 5px;
+    }
+
+    .manager {
+        padding-left: 10px;
+        .boss, .manager-name, {
+            display: none;
+        }
+        .manager-pic {
+            margin-top: 4px;
+            width: 26px;
+            height: 26px;
+        }
+    }
+      .nav-menu {
+          a {
+            span{
+                margin-right: -10px;
+                font-size: 0px;
+                text-align: center;
+                @include padding (0, 0, 0px, 0);
+          }
+        }
+     }
+   }
+}
+@media (max-width: 767px)  {
+    span {
+        font-size: 11px;
+        text-align: center;
+
+    }
+
+}
+@media (max-width: 560px) {
+    .topbar {
+        width: 100vw;
+    }
+
+}
+@media ( max-width: 380px) {
+  .topbar {
+    display: 100vw;
+      span {
+        display: none;
+
+      }
+    }
+}
+@media ( max-width: 767px) {
+  body {
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+}
+}
+@media ( max-width: 560px) {
+  body {
+    width: 90vw;
+    margin: 0;
+    padding: 0px;
+    }
+}
+@media ( max-width: 360px) {
+  body {
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    }
+}
+

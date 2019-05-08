@@ -1,10 +1,18 @@
-.links {
-    margin-left: 188px;
-    font-size: 16px;
-    @include size (auto, auto);
-    border-top: 20px solid $main-background-cararra;
-    border-bottom: 2px solid $main-background-cararra;
-    border-left: 20px solid $main-background-cararra;
-    border-right: 20px solid $main-background-cararra;
-    @include padding (0, 0, 0, 0)
+.general, .links {
+      margin-left: 388px;
+  font-size: 16px;
+  @include size (auto, auto);
+  border-top: 80px solid $main-background-cararra;
+  border-bottom: 20px solid $main-background-cararra;
+  border-left: 20px solid $main-background-cararra;
+  border-right: 20px solid $main-background-cararra;
+  @include padding (0px, 0px, 0px, 0px);
+
+  p {
+
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    @include padding (20px, 20px, 20px, 20px);
+    color: $font;
+  }
 }
