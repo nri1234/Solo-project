@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-end;
   border-bottom: 1px solid #e3e3e3;
-  position: fixed;
+  position: relative;
   @include size (100%, auto);
   background-color: white;
   margin-top: 0;

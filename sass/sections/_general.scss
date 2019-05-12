@@ -15,39 +15,36 @@
     color: $font;
   }
   .calendar {
-    @include size (auto, auto);
-    @include padding (20px, 20px, 0, 0);
-    text-align: center;
-    margin:10px 50px;
+    display: flex;
+    @include padding (20px, 0px, 20px, 0);
+    justify-content: center;
     .form-input, .date-period {
-      display: inline-flex;
+      display: flex;
       border-radius: 4px;
       color: $main-shaft;
       border: 1px solid black;
       font-size: 16px;
       font-family: "Roboto", sans-serif;
-      @include padding (5px, 51px, 5px, 5px);
+      @include padding (5px, 0px, 5px, 5px);
       text-align: left;
       outline: none;
       @include size (auto, auto);
     }
     .input-icon {
-      display: inline-block;
+      display: inline;
       font-size: 20px;
-      transform: translate(40px);
-      margin-left: -55px;
       z-index: 1;
       color: $font;
+      margin: 2px;
     }
     .date-period {
     @extend .form-input;
-    display: inline-flex;
     input {
         border: none;
         &:nth-child(2) {
           border-radius: 0px;
           border-left: 1px $main-shaft solid;
-          @include padding (0, 15px, 0, 14px);
+          @include padding (0, 0px, 0, 0px);
         }
     }
     .icon-calendar {
@@ -59,10 +56,10 @@
     }
   }
   .submit-btn, .btn-orange {
-      @include size (47px, 47px);
+      @include size (48px, 48px);
       border-radius: 4px;
       border: none;
-      margin-left: 2px;
+      margin-left: 7px;
       .icon-refresh {
         color: white;
         font-size: 15px;
@@ -91,7 +88,7 @@
       .text {
         display: flex;
         flex-direction: row;
-        border-bottom: 0.5px solid #f5f5f2;
+        border-bottom: 0.5px solid $underlines;
         justify-content: space-between;
         @includ padding (1px 5px 1px 30px);
         @include size (40%, 45px);
@@ -100,7 +97,7 @@
       .dist {
         display: flex;
         flex-direction: row;
-        border-bottom: 0.5px solid #f5f5f2;
+        border-bottom: 0.5px solid $underlines;
         justify-content: space-between;
         @includ padding (1px 30px 1px 5px);
         @include size (40%, 45px);
@@ -141,27 +138,25 @@
         font-size: 12px;
       }
       .calendar {
-        margin:auto;
         .form-input, .date-period {
           font-size: 14px;
           @include padding (2px, 2px, 2px, 2px);
-          @include size (80%, auto);
+          @include size (100%, 100%);
         }
         .input-icon {
           font-size: 16px;
-          margin-left: -29px;
         }
         .date-period {
-        display: inline-block;
+
         input {
             &:nth-child(2) {
-              border-left: none;
               padding-left: 1px;
             }
         }
         .icon-calendar {
             color: $main-shaft;
             cursor: pointer;
+            margin: auto;
             &:hover {
                 color: $font;
             }
@@ -169,8 +164,6 @@
       }
       .submit-btn, .btn-orange {
           @include size (30px, 30px);
-          top: 150px;
-          position: absolute;
           .icon-refresh {
           }
         }
@@ -195,6 +188,10 @@
     }
       .calendar {
         .form-input, .date-period {
+            margin: 0px;
+            font-size: 12px;
+          @include padding (2px, 2px, 2px, 2px);
+          @include size (50%, 100%);
         }
         .input-icon {
         }
@@ -204,6 +201,7 @@
             }
         }
         .icon-calendar {
+            margin-left: -15px;
             &:hover {
             }
         }

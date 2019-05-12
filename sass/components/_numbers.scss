@@ -13,7 +13,7 @@
       .text {
         display: flex;
         flex-direction: row;
-        border-bottom: 0.5px solid black;
+        border-bottom: 0.5px solid #E3E3E3;
         justify-content: space-between;
         @includ padding (1px 5px 1px 30px);
         @include size (40%, 45px);
@@ -22,7 +22,7 @@
       .dist {
         display: flex;
         flex-direction: row;
-        border-bottom: 0.5px solid black;
+        border-bottom: 0.5px solid #E3E3E3;
         justify-content: space-between;
         @includ padding (1px 30px 1px 5px);
         @include size (40%, 45px);

@@ -37,7 +37,7 @@
         font-family: "Roboto", sans-serif;
       }
       .info {
-        border: 1px solid $main-background-cararra;
+        border: 1px solid $underlines;
         text-align: left;
         width: auto;
         border-left: none;
@@ -47,6 +47,7 @@
         .pages {
           height: auto;
           z-index: 2222;
+          display: flex;
             &:hover .overlay,
             &:focus .overlay {
               opacity: 1;
@@ -71,6 +72,7 @@
               a {
                 position: absolute;
                 z-index: 222;
+                color: darkblue;
               }
             }
           }
@@ -113,6 +115,7 @@
     @include padding (10px, 10px, 10px, 10px);
     p {
       font-size: 12px;
+      @include padding (0px, 0px, 0px, 10px);
     }
     hr {
       display: none;
@@ -137,6 +140,66 @@
             }
             .web {
               p {
+                font-size: 16px;
+                text-align:justify;
+                font-weight: 500;
+              }
+            }
+          .pref {
+            p {
+              font-size: 14px;
+              text-align: justify;
+              a {
+                left: 0px;
+              }
+            }
+          }
+          .overlay {
+            display: inline-flex;
+            flex-wrap: wrap;
+            @include position (inherit, 0, 0, 0, 0);
+            @include padding (15px, 0px, 0px, 65px);
+            background-color: rgba(0,0,0,0);
+            text-align: center;
+            .icon-links {
+              font-size: 12px;
+              margin: 0px;
+            }
+            .icon-trash {
+              font-size: 12px;
+              margin: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 420px) {
+     .links {
+
+    p {
+
+    }
+    hr {
+
+    }
+    .shrink {
+
+      .add, .btn-orange {
+
+      }
+      .info {
+          @include padding (0px, 0px, 0px, 1px);
+        .pages {
+          height: auto;
+          z-index: 2222;
+            &:hover .overlay,
+            &:focus .overlay {
+              opacity: 1;
+            }
+            .web {
+              p {
                 font-size: 12px;
                 text-align:justify;
                 font-weight: 500;
@@ -144,9 +207,8 @@
             }
           .pref {
             p {
-              font-size: 12px;
+              font-size: 10px;
               text-align: justify;
-              margin: 0 50px;
               a {
                 left: 0px;
               }
@@ -154,7 +216,7 @@
           }
           .overlay {
             @include position (inherit, 0, 0, 0, 0);
-            @include padding (0px, 0px, 0px, 0px);
+            @include padding (15px, 0px, 0px, 55px);
             background-color: rgba(0,0,0,0);
             text-align: center;
             .icon-links {
