@@ -1,0 +1,160 @@
+.generalName{
+	color: $secondcolor;
+	text-transform: uppercase;
+    text-align: left;
+    padding: 5px 15px;
+    font-size: 15px;
+}
+
+.generalCalendar {
+	display: flex;
+	padding: 50px 0;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid $secondcolor;
+	border-bottom: 1px solid $secondcolor;
+
+	.windowOne {
+		display: inline-block;
+		border: 1px solid $secondcolor;
+		padding: 10px;
+	}
+	.calendarWindowWithIcon{
+		border: 1px solid $secondcolor;
+		padding: 10px;
+
+		.windowTwo {
+			display: inline-block;
+			border: none;
+		}
+		.icon-calendar {
+			padding: 0px;
+		}
+	}
+	.icon-refresh {
+		border: none;
+		padding: 10px 12px;
+		margin-left: 5px;
+		background-color: $brand-main-color;
+		border-radius: 8px;
+		color: $firstcolor;
+	}
+}
+.generalLine {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.generalLineStatistic {
+		width: 50%;
+
+		.statistic {
+			display: flex;
+			margin: 20px 0;
+
+			.lineStatistic {
+
+				.lineElement {
+					display: flex;
+					align-items: left;
+					width: 100%;
+					padding: 20px;
+					border-bottom: 1px solid $secondcolor;
+
+
+					.col-6 {
+						padding: 0;
+
+						.lineName {
+							color: $secondcolor;
+							font-size: 15px;
+						}
+					}
+
+					.col-6 {
+						padding: 0;
+
+						.lineData {
+							font-size: 15px;
+							text-align: right;
+
+						}
+					}
+				}
+			}
+		}
+	}
+}
+		.generalChartTitle {
+			font-size: 20px;
+			font-weight: 500;
+			color: $secondcolor;
+			display: flex;
+			justify-content: left;
+			margin: 0 50px;
+			padding-bottom: 20px;
+
+		}
+
+		.generalChartLegend {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-bottom: 20px;
+
+			[class='0-legend'] {
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;
+
+				li {
+					width: 100px;
+					color: $secondcolor;
+					list-style-type: none;
+					span {
+						display: inline-block;
+						width: 10px;
+						height: 10px;
+						margin-right: 10px;
+						border-radius: 50%;
+					}
+				}
+
+			}
+		}
+
+		.generalChart{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			#myChart {
+				padding: 0 250px;
+				padding-bottom: 100px;
+			}
+
+		}
+@media (max-width: 769px) {
+    .generalCalendar {
+        display: flex;
+        flex-direction: column;
+
+        .windowOne {
+            padding: 0px;
+            width: 58.5%;
+        }
+        .calendarWindowWithIcon{
+            border: 1px solid $secondcolor;
+            padding: 0px;
+
+            .windowTwo {
+
+            }
+            .icon-calendar {
+            }
+        }
+        .icon-refresh {
+            margin: 5px;
+        }
+    }
+}
