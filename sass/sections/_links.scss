@@ -1,0 +1,233 @@
+.links {
+    margin-left: 188px;
+    font-size: 16px;
+    @include size (auto, auto);
+    border-top: 20px solid $main-background-cararra;
+    border-bottom: 2px solid $main-background-cararra;
+    border-left: 20px solid $main-background-cararra;
+    border-right: 20px solid $main-background-cararra;
+    @include padding (0, 0, 0, 0);
+    p {
+      font-size: 18px;
+      font-family: "Roboto", sans-serif;
+      @include padding (20px, 20px, 20px, 20px);
+      color: $font;
+    }
+    hr {
+      @include size (auto, 10px);
+      @include padding (2px, 0px, 2px, 0px);
+      background-color: $main-background-cararra;
+      border: none;
+    }
+    .shrink {
+      display: flex;
+      flex-direction: column;
+      margin: 0 50px 0 50px;
+      flex-wrap: wrap;
+      text-align: center;
+      @include size (auto, auto);
+      @include padding (30px, 30px, 30px, 30px);
+      .add, .btn-orange {
+        margin: 20px 50px;
+        text-align: center;
+        @include size (150px, 47px);
+        border-radius: 4px;
+        border: none;
+        color: white;
+        font-family: "Roboto", sans-serif;
+      }
+      .info {
+        border: 1px solid $underlines;
+        text-align: left;
+        width: auto;
+        border-left: none;
+        border-right: none;
+        position: relative;
+        @include padding (20px, 20px, 20px, 20px);
+        .pages {
+          height: auto;
+          z-index: 2222;
+          display: flex;
+            &:hover .overlay,
+            &:focus .overlay {
+              opacity: 1;
+            }
+            .web {
+            p {
+              font-size: 18px;
+              font-family: "Roboto", sans-serif;
+              font-weight: bold;
+              text-align:justify;
+              color: $font ;
+            }
+          }
+          .pref {
+            p {
+              font-size: 18px;
+              font-family: "Roboto", sans-serif;
+              font-weight: bold;
+              text-align:justify;
+              color: $chart-horizon;
+              position: relative;
+              a {
+                position: absolute;
+                z-index: 222;
+                color: darkblue;
+              }
+            }
+          }
+          .overlay {
+            @include position (absolute, 0, 0, 0, 0);
+            @include padding (62px, 62px, 62px, 62px,);
+            border: none;
+            display: inline;
+            @include size (auto, auto);
+            opacity: 0;
+            transition: .5s ease;
+            cursor: pointer;
+            background-color: rgba(0,0,0, 0.08);
+            text-align:right;
+            overflow: hidden;
+
+            .icon-links {
+              color: $buttons-chart-extasy;
+              font-size: 16px;
+              margin: 20px;
+            }
+            .icon-trash {
+              font-size: 16px;
+              margin: -10px;
+            }
+          }
+        }
+      }
+    }
+  }
+@media (max-width: 769px) {
+  .links {
+    margin-left: 55px;
+    font-size: 12px;
+    max-width: 767px;
+    border-top: 0px solid $main-background-cararra;
+    border-bottom: 0px solid $main-background-cararra;
+    border-left: 0px solid $main-background-cararra;
+    border-right: 0px solid $main-background-cararra;
+    @include padding (10px, 10px, 10px, 10px);
+    p {
+      font-size: 12px;
+      @include padding (0px, 0px, 0px, 10px);
+    }
+    hr {
+      display: none;
+    }
+    .shrink {
+      margin: 0px;
+      @include padding (0px, 0px, 0px, 0px);
+      .add, .btn-orange {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        @include size (120px, 37px);
+      }
+      .info {
+        position: inherit;
+        @include padding (0px, 1px, 0px, 1px);
+        .pages {
+          height: auto;
+          z-index: 2222;
+            &:hover .overlay,
+            &:focus .overlay {
+              opacity: 1;
+            }
+            .web {
+              p {
+                font-size: 16px;
+                text-align:justify;
+                font-weight: 500;
+              }
+            }
+          .pref {
+            p {
+              font-size: 14px;
+              text-align: justify;
+              a {
+                left: 0px;
+              }
+            }
+          }
+          .overlay {
+            display: inline-flex;
+            flex-wrap: wrap;
+            @include position (inherit, 0, 0, 0, 0);
+            @include padding (15px, 0px, 0px, 65px);
+            background-color: rgba(0,0,0,0);
+            text-align: center;
+            .icon-links {
+              font-size: 12px;
+              margin: 0px;
+            }
+            .icon-trash {
+              font-size: 12px;
+              margin: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 420px) {
+     .links {
+
+    p {
+
+    }
+    hr {
+
+    }
+    .shrink {
+
+      .add, .btn-orange {
+
+      }
+      .info {
+          @include padding (0px, 0px, 0px, 1px);
+        .pages {
+          height: auto;
+          z-index: 2222;
+            &:hover .overlay,
+            &:focus .overlay {
+              opacity: 1;
+            }
+            .web {
+              p {
+                font-size: 12px;
+                text-align:justify;
+                font-weight: 500;
+              }
+            }
+          .pref {
+            p {
+              font-size: 10px;
+              text-align: justify;
+              a {
+                left: 0px;
+              }
+            }
+          }
+          .overlay {
+            @include position (inherit, 0, 0, 0, 0);
+            @include padding (15px, 0px, 0px, 55px);
+            background-color: rgba(0,0,0,0);
+            text-align: center;
+            .icon-links {
+              font-size: 12px;
+            }
+            .icon-trash {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

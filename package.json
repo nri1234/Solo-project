@@ -21,15 +21,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AnnaLangner/nauka_gita_2.git"
+
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AnnaLangner/nauka_gita_2/issues"
+
   },
-  "homepage": "https://github.com/AnnaLangner/nauka_gita_2#readme",
   "dependencies": {
     "mkdirp": "^0.5.1",
     "normalize.css": "^8.0.1",
